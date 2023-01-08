@@ -31,7 +31,7 @@ img{
 }
 main h2{
     text-shadow: 0 0 5px grey;
-    text-align: justify;
+    text-align: left;
 }
 footer{
     background-color: rgb(138, 0, 252);
@@ -43,7 +43,7 @@ a{
 }
 .links{
     justify-content: center;
-    text-align: justify;
+    text-align: left;
 }
 .myinfo{
     font-size: 1.2rem;
