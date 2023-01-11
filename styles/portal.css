@@ -27,11 +27,13 @@ img{
     text-align: start;
     align-self: center;
     padding: 19px;
+    font-family: "Archivo Black Family", sans-serif;
 
 }
 main h2{
     text-shadow: 0 0 5px grey;
     text-align: left;
+    font-family: "Archivo Black Family", sans-serif;
 }
 footer{
     background-color: rgb(138, 0, 252);
