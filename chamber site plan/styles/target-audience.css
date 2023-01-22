@@ -3,6 +3,9 @@ body{
     font-size: 18px;
     margin: 0;
 }
+main{
+    text-align: center;
+}
 header{
     display: flex;
     justify-content: flex-end;
@@ -30,16 +33,12 @@ h1,h2{
     font-family: "Nanum Gothic",sans-serif;
     text-shadow: 0 0 5px grey;
 }
-.name_logo{
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    padding: 25px;
-}
-.site-purpose{
-    text-align: center;
-    padding: 25px;
-}
 hr{
     border: 10px solid #001524;
+}
+.target, .personas, .scenarios{
+    padding: 30px;
+}
+ul li {
+    text-align:center; list-style-position:inside;
 }

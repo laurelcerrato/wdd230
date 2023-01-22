@@ -3,6 +3,9 @@ body{
     font-size: 18px;
     margin: 0;
 }
+main{
+    text-align: center;
+}
 header{
     display: flex;
     justify-content: flex-end;
@@ -30,16 +33,37 @@ h1,h2{
     font-family: "Nanum Gothic",sans-serif;
     text-shadow: 0 0 5px grey;
 }
-.name_logo{
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    padding: 25px;
-}
-.site-purpose{
-    text-align: center;
-    padding: 25px;
-}
 hr{
     border: 10px solid #001524;
 }
+.colors, .typography{
+    padding: 20px;
+}
+.colors {
+    width: 80%;
+    min-width: 350px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+    padding: 5px;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .color1 {
+    background-color: #001524;
+    color: #FFECD1;
+  }
+  .color2 {
+    background-color: #999;
+  }
+  .color3 {
+    background-color: #FFECD1;
+  }
+  .color4{
+    background-color: #FF7D00;
+  }
