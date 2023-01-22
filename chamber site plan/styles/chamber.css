@@ -43,3 +43,8 @@ h1,h2{
 hr{
     border: 10px solid #001524;
 }
+footer{
+    background-color: #FFECD1;
+    text-align: center;
+    padding: 20px;
+}

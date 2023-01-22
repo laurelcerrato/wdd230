@@ -40,8 +40,8 @@ hr{
     padding: 20px;
 }
 .colors {
-    width: 80%;
-    min-width: 350px;
+    width: 50%;
+    min-width: 300px;
     margin: 10px auto;
     text-align: center;
   }
@@ -67,3 +67,8 @@ hr{
   .color4{
     background-color: #FF7D00;
   }
+  footer{
+    background-color: #FFECD1;
+    text-align: center;
+    padding: 20px;
+}

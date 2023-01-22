@@ -1,0 +1,28 @@
+@media only screen and (max-width: 32.5em){
+    header,footer{
+        display: flex;
+		flex-flow: column;
+	}
+    .name_logo{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .name_logo img{
+        width: 80%;
+    }
+    .colors tr{
+        display: flex;
+        flex-direction: column;
+    }
+    th{
+        display: none;
+    }
+    .colors-section{
+        padding: 10px;
+    }
+    td{
+        font-size: 16px;
+    }
+
+}

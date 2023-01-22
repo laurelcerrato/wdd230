@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the Sula Valley Chamber site plan home page">
+    <meta name="description" content="This is the Sula Valley Chamber site plan for the deseign page">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/design.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
     <title>Design</title>
 </head>
 <body>
@@ -24,13 +26,13 @@
     <main>
         <h1>Design</h1>
         <hr>
-        <section class="colors">
+        <section class="colors-section">
         <h1>Color schema</h1>
         <p>Palette URL:</p>
         <a href="https://coolors.co/001524-15616d-ffecd1-ff7d00"
         target="_blank">https://coolors.co/001524-15616d-ffecd1-ff7d00</a>
         <table class="colors">
-            <tr>
+            <tr class="colors-enumerated">
               <th>Color 1</th>
               <th>Color 2</th>
               <th>Color 3</th>
@@ -52,7 +54,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         </section>
+        <footer>
+            <p class="myinfo"><b>&copy;<span class ="year"></span> | Laurel Cerrato | Honduras</b></p>
+            <p class="update"><b> Last Updated: <span id="date"></span> </b></p>
+        </footer>
     </main>
-    
+    <script src="scripts/site-plan.js"></script>   
 </body>
 </html>
