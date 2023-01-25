@@ -1,5 +1,15 @@
-@media only screen and (max-width: 64em){
-    hr{
-        display: none;
+@media only screen and (max-width: 32.5em)  {
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    img{
+        width:70%;
+        margin-top: -20px;
+
+    }
+    .name{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
