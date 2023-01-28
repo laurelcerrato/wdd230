@@ -5,45 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
-    <nav>
-        <img src="images/sulavalleylogo.png" alt="Logo">
-        <h1>Sula Valley Chamber</h1>
-        <p class="currentDate"></p>
+    <header>
+        <img class="logo" src="images/sulavalleylogo.png " alt="Logo">
+        <section class="headings">
+        <h1 class="title">Sula Valley Chamber</h1>
+        <div class="date"></div>
+        </section>
         <div class="social">
-        <a href="facebook.com" target="_blank">
-            <img src="images/fblogo.png" alt="Facebook Logo">
-        </a>
-        <a href="instagram.com" target="_blank"><img src="images/iglogo.png" alt="Instgram logo"></a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.png" alt="Facebook Logo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instgram logo"></a>
         </div>
-        <button>&#9776;</button>
-        <ul>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Contact us</a></li>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"> <span>&#9776;</span> <span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>        
         </ul>
     </nav>
     <main>
-        <div>Hero with site name and call to action</div>
-        <div>Event</div>
-        <div>Weather</div>
-        <div>New Release</div>
-        <div>Join</div>
-        <div>
-            <div>Spotlight 1</div>
-            <div>Spotlight 2</div>
+        <div class="placeholders">Hero with site name and call to action</div>
+        <div class="placeholders">Event</div>
+        <div class="placeholders">Event</div>
+        <div class="placeholders">Weather</div>
+        <div class="placeholders">New Release</div>
+        <div class="placeholders">Join</div>
+        <div class="placeholders">
+            <div class="spotlight1">Spotlight 1</div>
+            <div class="spotlight2">Spotlight 2</div>
         </div>
         <footer>
-            <img src="images/sulavalleylogo.png" alt="logo">
+            <img class="logo" src="images/sulavalleylogo.png" alt="logo">
             <div>
-            <p>Sula Valley Cahmber of commerce</p>
+            <p>Sula Valley Chamber of commerce</p>
             </div>
             <div>
                 <p>info@sullavalley.gmail.com</p>
                 <p> +504 8127812718</p>
-                <a href="#">📍 Location Map</a>
+                <a href="https://www.google.com/maps/@15.4599222,-88.0723241,11z" target="_blank">📍 Location Map</a>
             </div>
             <hr>
             <p class="myinfo"><b>&copy;<span class ="year"></span> | Laurel Cerrato | Honduras </b></p>
