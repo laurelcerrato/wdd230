@@ -38,6 +38,11 @@ hr{
 .target, .personas, .scenarios{
     padding: 30px;
 }
+.personas{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 ul li {
     text-align:center; list-style-position:inside;
 }
@@ -45,4 +50,7 @@ footer{
     background-color: #FFECD1;
     text-align: center;
     padding: 20px;
+}
+.patrick{
+    width: 30%;
 }
