@@ -21,7 +21,13 @@
         grid-column: 1/4;
         grid-row: 3/4;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 300px;
+    }
+    .spotlight1,.spotlight2{
+        grid-row: 1/3;
+
     }
     .join{
         grid-column: 1/4;
