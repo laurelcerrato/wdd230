@@ -61,6 +61,7 @@
     .spotlight{
         grid-column: 4/5;
         grid-row: 1/4;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
     .spotlight3{
