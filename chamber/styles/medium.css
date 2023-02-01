@@ -4,12 +4,18 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
+    .social a img{
+        width: 50%;
+    }
     .hero{
         grid-column: 1/4;
     }
     .new{
         grid-column: 1/4;
         grid-row: 2/3;
+    }
+    .join{
+        display: block;
     }
     .spotlight{
         grid-column: 1/4;

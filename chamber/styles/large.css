@@ -1,12 +1,16 @@
 @media only screen and (min-width: 64rem){
     .logo{
-        width: 15%;
+        width: 100%;
     }
     header{
         justify-content: space-around;
     }
+    .social a img{
+        width: 50%;
+    }
     nav ul{
         display: flex;
+        background-color: #FFECD1;
     }
     nav button{
         display: none;
@@ -14,10 +18,15 @@
     nav ul li a{
         justify-content: space-around;
         padding: 25px;
+        color: #333;
+        border-top: 0;
     }
     nav ul li{
         width: 50%;
         text-align: center;
+    }
+    nav ul li a:hover {
+        font-weight: bold;
     }
     
     .social{
@@ -25,7 +34,7 @@
     }
     
     .social a img{
-        width: 40%;
+        width: 70%;
         height: auto;
     }
     main{
@@ -52,6 +61,9 @@
     .spotlight{
         grid-column: 4/5;
         grid-row: 1/4;
+    }
+    .spotlight3{
+        display: block;
     }
     .join{
         grid-column: 1/2;

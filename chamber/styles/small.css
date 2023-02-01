@@ -29,20 +29,20 @@ header{
 	border-bottom: 1px solid #bbb;
 }
 .logo {
-	display: flex;
-	align-items: center;
-    width: 30%;
+    display: flex;
+    width: 100%;
     height: auto;
 }
 
 .headings {
 	display: flex;
 	flex-direction: column;
-	margin-left: .5rem;
+    width: 60%;
 }
 
 .headings h1 {
 	font-size: 1.5rem;
+    text-align: center;
 }
 .date{
     letter-spacing: 1pt;
@@ -52,6 +52,7 @@ header{
     border: 1px solid#333;
     text-align: center;
     padding: 5px;
+
 }
 .title{
     display: flex;
@@ -60,26 +61,34 @@ header{
     align-self: center;
 }
 .social{
+    align-self: center;
     margin-left: 1.5rem;
 }
 
 .social a img{
-    width: 50%;
-	height: auto;
+    width: 100%;
+    align-self: center;
+}
+.join{
+    display: none;
+}
+.spotlight3{
+    display: none;
 }
 
 nav{
-    background-color: #001524;
+    align-self:center;
 }
 nav ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: #001524;
 }
 nav button{
     margin: .2rem 2vw;
     background: transparent;
-    border: none;
+    border: 1px solid#333;
     font-size: 2rem;
     color: #555;
 }
@@ -90,15 +99,12 @@ nav ul li a{
     color: #FFECD1;
     border-top:1px solid rgba(0,0,0,0.5);
 }
-
-nav ul li a:hover {
-    background-color: rgba(0,0,0,0.3) ;
-}
 nav ul{
     display: none;
 }
 nav ul.open{
     display: block;
+    margin-left: 1rem;
 }
 #hamburgerBtn span:nth-child(1){
     display: block;
