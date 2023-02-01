@@ -16,5 +16,4 @@ button.addEventListener('click', () =>{
         
     });
     input.focus();
-    input.value = "";
 });
