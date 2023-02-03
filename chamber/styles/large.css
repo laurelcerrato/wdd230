@@ -2,6 +2,44 @@
     .logo{
         width: 100%;
     }
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+    #primaryNav{
+        position:static;
+        left: 0;
+        top: 15%;
+        gap: 0;
+        flex-direction: row;
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-link:hover{
+        font-weight: bold;
+        color: black;
+    }
+    .headings {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .headings h1 {
+        font-size: 1.5rem;
+    }
+    .date{
+        letter-spacing: 1pt;
+        font-weight: 700;
+        font-size: 0.8rem;
+        background-color: #FF7D00;
+        border: 1px solid#333;
+        text-align: center;
+        padding: 5px;
+    
+    }
     header{
         justify-content: space-around;
     }
