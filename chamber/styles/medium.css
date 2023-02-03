@@ -4,6 +4,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
+    #primaryNav{
+        top: 25%;
+    }
     .social a img{
         width: 50%;
     }

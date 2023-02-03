@@ -133,7 +133,7 @@ nav button{
 #primaryNav{
     position:fixed;
     left: -100%;
-    top: 15%;
+    top: 20%;
     gap: 0;
     flex-direction: column;
     background-color: #001524;
