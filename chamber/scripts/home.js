@@ -20,8 +20,9 @@ hamburger.addEventListener("click", () => {
 })
 //Banner js
 const banner = document.querySelector(".banner");
-//using the now variable that holds the current date
-if (now == 1 || now == 2){
+//using the now variable that holds the current date I use getDay() to get the day of the week
+const dayOfW = now.getDay();
+if (dayOfW == 1 || dayOfW == 2){
     banner.style.display = "block";
 }else{
     banner.style.display= "none";
