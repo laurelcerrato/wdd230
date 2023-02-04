@@ -2,14 +2,13 @@
 
 body{
     margin: 0;
-    font-family: Comfortaa;
+    font-family: "Comfortaa", "sans-serif";
     background-color:azure;
-}
-.date{
-    grid-column: 1/3;
 }
 main{
     font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 header{
     background-color: #FFECD1;
@@ -18,7 +17,6 @@ header{
     align-items: center;
 	justify-content: space-around;
 	margin: 0 auto;
-	border-bottom: 1px solid #bbb;
 }
 .logo {
     width: 100%;
@@ -87,10 +85,11 @@ nav ul{
     gap: 60px;
 }
 .nav-link{
-    transition: 0.7s ease;
+    transition: 0.3s ease;
 }
 .nav-link:hover{
-    color: #FFECD1;
+    font-weight: bold;
+    text-shadow: 0 0 10px #FFECD1;
 }
 .hamburger{
     display: block;
@@ -140,9 +139,9 @@ nav ul li a{
 .event, .join, .weather,.new, .spotlight, .spotlight1, .spotlight2, .spotlight3{
     background-color:#001524;
     margin: 5px;
-    color:white;
-    font-family: "Nanum Gothic";
-    font-weight: 900;
+    color:#FFECD1;
+    font-family: "Comfortaa", "sans-serif";
+    font-weight:500;
     text-align: center;
     justify-content: center;
     box-shadow: 0 0 10px #010405;
@@ -151,45 +150,33 @@ nav ul li a{
 .hero{
     padding: 0;
     margin: 0;
-    background-color: transparent;
     position: relative;
 }
 .hero img{
     width: 100%;
     height: 100%;
-    margin-top: 10px;
 }
 .hero h2 {
     color: #010405;
     text-shadow: 0 0 5px #FFECD1;
     position: absolute;
+    left: 25%;
+    right: 25%;
+    width: 50%;
     z-index: 1;
-    left: 5%;
-    font-weight: 900;
-    top:0;
-    padding: 5px;
-    border-radius: 10px;
     text-align: center;
 }
 .hero h3{
     position: absolute;
-    background-color: #FF7D00;
-    padding: 8px;
-    border-radius: 10px;
-    left: 20%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
     top: 50%;
+    background-color: #FF7D00;
+    padding: 5px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px #010405;
-}
-.hero h2 {
-    left: 25%;
-    right: 25%;
-    width: 50%;
-}
-.hero h3{
-    left: 25%;
-    right: 25%;
-    width: 50%;
 }
 .weather img{
     width:20%;
@@ -241,7 +228,8 @@ footer .logo{
 }
 footer a{
     text-decoration: none;
-    color: #333;
+    color: #001524;
+    font-weight: 900;
 }
 footer hr{
     width: 100%;
@@ -249,30 +237,29 @@ footer hr{
 }
 .banner {
     background: #001524;
-  }
-  
-  .banner__content {
+}
+
+.banner__content {
     padding: 16px;
     max-width: 500px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-  }
-  
-  .banner__text {
+}
+
+.banner__text {
     flex-grow: 1;
     line-height: 1.4;
-    font-family: "Quicksand", sans-serif;
-  }
-  
-  .banner__close {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.banner__close {
     background: none;
     border: none;
     cursor: pointer;
-  }
-  
-  .banner__text,
-  .banner__close > span {
+}
+
+.banner__text,
+.banner__close > span {
     color: #ffffff;
-  }
-  
+}

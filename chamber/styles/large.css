@@ -1,7 +1,4 @@
 @media only screen and (min-width: 64rem){
-    .logo{
-        width: 100%;
-    }
     .hamburger{
         display: none;
         cursor: pointer;
@@ -31,32 +28,16 @@
         font-size: 1.5rem;
     }
     .date{
-        letter-spacing: 1pt;
-        font-weight: 700;
         font-size: 0.8rem;
-        background-color: #FF7D00;
-        border: 1px solid#333;
-        text-align: center;
-        padding: 5px;
-    
-    }
-    header{
-        justify-content: space-around;
-    }
-    .social a img{
-        width: 50%;
     }
     nav ul{
         display: flex;
         background-color: #FFECD1;
     }
-    nav button{
-        display: none;
-    }
     nav ul li a{
         justify-content: space-around;
         padding: 25px;
-        color: #333;
+        color: #001524;
         border-top: 0;
     }
     nav ul li{
@@ -72,8 +53,7 @@
     }
     
     .social a img{
-        width: 70%;
-        height: auto;
+        width: 80%;
     }
     main{
         grid-template-columns: 1fr 1fr 1fr 1fr;

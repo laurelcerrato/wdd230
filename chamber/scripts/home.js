@@ -29,5 +29,4 @@ if (dayOfW == 1 || dayOfW == 2){
 }
 document.querySelector(".banner__close").addEventListener("click", function () {
     this.closest(".banner").style.display = "none";
-  });
-  
+});

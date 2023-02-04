@@ -15,7 +15,6 @@
         grid-row: 1/2;
     }
     .new{
-        margin-top: 20px;
         grid-column: 1/4;
         grid-row: 2/3;
     }
@@ -31,7 +30,7 @@
         display: block;
     }
     .join h2 {
-        background-color:cornsilk;
+        background-color:#FF7D00;
         color: black;
         border-radius: 20px;
         padding: 10px;
