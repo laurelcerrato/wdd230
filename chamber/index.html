@@ -29,7 +29,7 @@
     <header>
         <nav class="navbar">
             <a href="index.html" class="logoholder">
-                <img class="logo" src="images/sulavalleylogo.png" alt="Logo">
+                <img class="logo" src="images/sulavalleylogo.webp" alt="Logo">
             </a>
             <section class="headings">
             <h2 class="title">Sula Valley Chamber</h2>
@@ -58,7 +58,12 @@
     <main>
         <div class="hero">
             <h2>Welcome to Sula Valley</h2>
-            <img src="images/sps.jpg" alt="San Pedro Sula Honduras">
+            <picture>
+                <source srcset="images/wdd230-orgmedium.jpg" media="(min-width:500px) and (max-width: 799px)">
+                <source srcset="images/wdd230-orglarge.jpg" media="(min-width:800px)">
+                <img src="images/wdd230-orgsmall.jpg" alt="Hero Image">
+            </picture>
+            <!-- <img src="images/wdd230-orglarge.jpg" alt="San Pedro Sula Honduras"> -->
             <h3>Join the Chamber</h3>
         </div>
         <div class="event">
@@ -70,15 +75,15 @@
             <h2>Weather</h2>
             <section>
             <img src="images/sun.png" alt="sun">
-            <h3>33°C</h3>
+            <h3><span class="temperature">33</span> °C</h3>
             <p>Sunny</p>
             </section>
             <hr>
             <p>
-            Wind: NE 28 km/h <br>
+            Wind: NE <span class="wind-speed">28</span> km/h <br>
             Wind Gusts: 28 km/h <br>
             Humidity: 54 %. <br>
-            Dew Point: 20° C
+            Wind Chill: <span class="wind-chill"></span>
             </p>
         </div>
         <div class="new"><h2>News Release</h2>
@@ -107,7 +112,7 @@
             </div>
             <div class="spotlight3">
                 <h2>INCE Constructions</h2>
-                <img src="images/arquit.png" alt="fruits">
+                <img src="images/arquit.png" alt="INCE">
                 <p>Building beautiful homes one dream at a time.</p>
                 <hr>
                 <p>ince@const.com</p>
@@ -116,7 +121,7 @@
         </div>
     </main>
     <footer>
-        <img class="logo" src="images/sulavalleylogo.png" alt="logo">
+        <img class="logo" src="images/sulavalleylogo.webp" alt="logo">
         <p class="footername"><b> Sula Valley Chamber of commerce</b></p>
         <div class="contactinfo">
             <p>info@sullavalley.gmail.com</p>
@@ -128,5 +133,6 @@
         <p class="update"><b>Last Updated: <span id="date"></span> </b></p>
     </footer>
     <script src="scripts/home.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

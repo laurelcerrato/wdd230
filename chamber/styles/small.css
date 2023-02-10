@@ -186,6 +186,7 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .weather section p{
     align-self: center;
