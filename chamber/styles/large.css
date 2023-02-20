@@ -100,4 +100,12 @@
     footer hr{
         display: none;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .grid section{
+        grid-column: 1/2;
+    }
 }   

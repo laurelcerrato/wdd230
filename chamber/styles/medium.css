@@ -29,6 +29,9 @@
         grid-row: 4/5;
         display: block;
     }
+    hr{
+        display: none;
+    }
     .join h2 {
         background-color:#FF7D00;
         color: black;

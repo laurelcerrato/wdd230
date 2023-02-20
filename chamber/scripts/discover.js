@@ -4,7 +4,6 @@ const loadImage = (img) => {
     img.src = src;
     img.onload = () => {
     img.removeAttribute("data-src");
-    img.parentElement.classList.remove("scale");
     };
 }
 const imgOptions = {
@@ -24,3 +23,13 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
 imagesToLoad.forEach(image => {
     imgObserver.observe(image);
 });
+//visits
+const visitsDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
