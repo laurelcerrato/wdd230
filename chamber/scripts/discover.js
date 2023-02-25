@@ -23,13 +23,24 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
 imagesToLoad.forEach(image => {
     imgObserver.observe(image);
 });
+
 //visits
-const visitsDisplay = document.querySelector(".visits");
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit!`;
+date_1 = new Date().toDateString();
+date_2 = new Date();
+
+const days = (date1, date2) =>{
+    let difference = date1.getTime() - date2.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;}
+
+let lastvisit = localStorage.getItem("last-visit");
+
+if(!lastvisit){
+    localStorage.setItem('last.visit', date_1);
+    document.querySelector(".visits").innerHTML= "Welcome, this is your first visit";
+}else{
+    const difference = days(new Date(lastvisit),date2);
+    document.querySelector(".visits").innerHTML= "Welcome again, you visited this page "+ difference + " days ago.";
+    localStorage.setItem('@last-visit', date_1);
 }
-numVisits++;
-localStorage.setItem("visits-ls", numVisits);
+
