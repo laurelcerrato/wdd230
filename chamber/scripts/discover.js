@@ -35,12 +35,12 @@ const days = (date1, date2) =>{
 
 let lastvisit = localStorage.getItem("last-visit");
 
-if(!lastvisit){
-    localStorage.setItem('last.visit', date_1);
+if(lastvisit == date_1){
+    localStorage.setItem('last-visit', date_1);
     document.querySelector(".visits").innerHTML= "Welcome, this is your first visit";
 }else{
     const difference = days(new Date(lastvisit),date2);
     document.querySelector(".visits").innerHTML= "Welcome again, you visited this page "+ difference + " days ago.";
-    localStorage.setItem('@last-visit', date_1);
+    localStorage.setItem('last-visit', date_1);
 }
 
