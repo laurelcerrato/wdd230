@@ -28,10 +28,11 @@ imagesToLoad.forEach(image => {
 date_1 = new Date().toDateString();
 date_2 = new Date();
 
-const days = (date1, date2) =>{
-    let difference = date1.getTime() - date2.getTime();
-    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-    return TotalDays;}
+const days = (startDate, endDate) => {
+    const difference = endDate.getTime() - startDate.getTime();
+    const days = Math.ceil(difference / (1000 * 3600 * 24));
+    return days;
+}
 
 let lastvisit = localStorage.getItem("last-visit");
 
@@ -40,7 +41,7 @@ if(!lastvisit){
     document.querySelector(".visits").innerHTML= "Welcome, this is your first visit";
 }else{
     const lastamount = days(new Date(lastvisit),new Date());
-    document.querySelector(".visits").innerHTML= "Welcome again, you visited this page "+ lastamount + " days ago.";
+    document.querySelector(".visits").innerHTML= "Welcome again, Last visited : " +  lastamount + " days ago";
     localStorage.setItem('last-visit', new Date());
 }
 
