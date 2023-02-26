@@ -108,4 +108,24 @@
     .grid section{
         grid-column: 1/2;
     }
+    .join-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .join-form{
+        grid-column: 1/2;
+    }
+    .nmembership, .bmembership, .smembership, .gmembership{
+        display: block;
+        grid-column: 2/3;
+        margin-left: auto;
+        margin-right: auto;
+        color: #FFECD1;
+        background-color: #001524;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    /* .nmembership, .bmembership, .smembership, .gmembership */
 }   

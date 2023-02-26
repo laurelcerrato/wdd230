@@ -305,7 +305,7 @@ footer hr{
 .discover h1{
     margin-bottom: 50px;
 }
-.memberships{
+.nmembership, .bmembership, .smembership, .gmembership{
     display: none;
 }
 .join-form main {
