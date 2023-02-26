@@ -35,7 +35,7 @@ const days = (date1, date2) =>{
 
 let lastvisit = localStorage.getItem("last-visit");
 
-if(lastvisit == date_1){
+if(!lastvisit){
     localStorage.setItem('last-visit', new Date().toDateString());
     document.querySelector(".visits").innerHTML= "Welcome, this is your first visit";
 }else{
