@@ -55,7 +55,8 @@
             <!-- <button id="hamburgerBtn"> <span>&#9776;</span> <span>X</span></button> -->
         </nav>
     </header>
-    <main class="join-form">
+    <main class="join-page">
+        <div class="join-form">
         <h1>Join us</h1>
         <form method="get" action="thankyou.html">
         <fieldset>
@@ -73,19 +74,56 @@
             <label class="sbs"><input type="radio" name="membership" value="npmemeber"> NP Membership</label>
             <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
             <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label> 
-            <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label> 
+            <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            <div class="memberships">
+            <div class="nmembership">
+                <h2>NP Membership</h2>
+                <h3>Cost: 0$</h3>
+                <p>Involve with the community</p>
+                <p>Participate in business meetings</p>
+            </div>
+            <div class="bmembership">
+                <h2>Bronze Membership</h2>
+                <h3>Cost: 5$ per month</h3>
+                <p>Involve with the community</p>
+                <p>Participate in business meetings</p>
+                <p><b>Receive trainings from professionals</b> </p>
+                <p><b>Montly Event descounts</b> </p>
+            </div>
+            <div class="smembership">
+                <h2>Silver Membership</h2>
+                <h3>Cost: 10$ per month</h3>
+                <p>Involve with the community</p>
+                <p>Participate in business meetings</p>
+                <p>Receive trainings from professionals</p>
+                <p><b> Weekly Event descounts</b> </p>
+                <p><b>Advertising for your Business</b> </p>
+            </div>
+            <div class="gmembership">
+                <h2>Gold Membership</h2>
+                <h3>Cost: 15$ per month</h3>
+                <p>Involve with the community</p>
+                <p>Participate in business meetings</p>
+                <p>Receive trainings from professionals</p>
+                <p><b> Weekly Event descounts</b> </p>
+                <p><b>Advertising for your Business</b> </p>
+                <p><b>Join the community business club</b> </p>
+                <p><b>Monthly event to advertise your business</b> </p>
+                <p><b>Appear in the official chamber web site home page</b></p>
+            </div>
+        </div>
         </fieldset>
-    
         <fieldset>
             <legend>Business description</legend>
             <label class="top">
-                <textarea id="description" name="description" rows="7" cols="50"></textarea>
+                <textarea id="description" name="description" rows="7" cols="40"></textarea>
             </label>
             </label>
         </fieldset>
         <input type="time" name="dateandtime" hidden>
         <input type="submit" value="Join the Chamber" class="submitBtn">
     </form>
+</div>
     </main>
     <footer>
         <img class="logo" src="images/sulavalleylogo.webp" alt="logo">
@@ -102,5 +140,6 @@
     <script src="scripts/home.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/discover.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
