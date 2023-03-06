@@ -1,0 +1,67 @@
+{
+    "companies" : [
+        {
+            "name" : "LACER",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/lacer.png"
+        },
+        {
+            "name" : "ZAFE",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/zmen.png"
+        },
+        {
+            "name" : "SOLAR",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/solar.png"
+        },
+        {
+            "name" : "TELEPACIFICO",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/tele.png"
+        },
+        {
+            "name" : "NET",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/net.png"
+        },
+        {
+            "name" : "SEBRAE",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/sebrae.png"
+        },
+        {
+            "name" : "GOAT",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/goat.png"
+        },
+        {
+            "name" : "WATCH US GROW",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/grow.png"
+        },
+        {
+            "name" : "CINEMA",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/cinema.png"
+        }
+    ]
+}
