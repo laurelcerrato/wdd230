@@ -136,7 +136,7 @@ nav ul li a{
     text-decoration: none;
     color: #FFECD1;
 }
-.event,.join-form, .join, .weather,.new, .spotlight, .spotlight1, .spotlight2, .spotlight3, .discover section{
+.event,.join-form, .join, .weather,.new, .spotlight, .spotlight1, .spotlight2, .spotlight3, .discover section, .directory section{
     background-color:#001524;
     margin: 5px;
     color:#FFECD1;
@@ -377,4 +377,59 @@ form label textarea{
     width: 96%;
     margin-left: auto;
     margin-right: auto;
+}
+.companies{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: rgba(6, 3, 224,0.2);
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list .companies {
+	display: flex;
+	margin: 0;
+	padding: 0.25rem;
+}
+.list section{
+    display: flex;
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+.list section h2{
+    text-align: left;
+}
+
+.list section > * {
+    margin: 0 1rem;
+
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.6);
 }

@@ -20,9 +20,9 @@ const displayCompanies = (data) => {
     let logo = document.createElement('img');
       // Build the h2 content out to show the prophet's full name - finish the template string
     h2.textContent = `${company.name}`;
-    address.textContent = `${company.address}`;
-    number.textContent = `${company.number}`;   
-    email.textContent = `${company.email}`; 
+    address.textContent = `Address: ${company.address}`;
+    number.textContent = `Phone Number: ${company.number}`;   
+    email.textContent = `Email: ${company.email}`; 
 
       // Build the image portrait by setting all the relevant attribute
     logo.setAttribute('src', company.img);
@@ -40,3 +40,26 @@ const displayCompanies = (data) => {
     cards.appendChild(card);
     } )// end of forEach loop
   } // end of function expression
+
+  const gridbutton = document.querySelector("#grid");
+  const listbutton = document.querySelector("#list");
+  const display = document.querySelector(".companies");
+  
+  // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+  
+  gridbutton.addEventListener("click", () => {
+      // example using arrow function
+    display.classList.add(".companies");
+    display.classList.remove("list");
+  });
+  
+  listbutton.addEventListener("click", () => {
+    // example using arrow function
+  display.classList.add("list");
+  display.classList.remove(".companies");
+}); // example using defined function
+  
+  function showList() {
+      display.classList.add("list");
+      display.classList.remove(".companies");
+  }
