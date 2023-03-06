@@ -406,10 +406,8 @@ form label textarea{
 }
 .list section{
     display: flex;
+    flex-direction: column;
     text-align: left;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     justify-items: center;
 }
 .list section h2{

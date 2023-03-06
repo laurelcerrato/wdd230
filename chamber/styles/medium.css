@@ -71,5 +71,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .list section{
+        flex-direction: row;
+    }
 }
