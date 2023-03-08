@@ -347,6 +347,11 @@ form label.top input, form label.top select, textarea{
     max-width: 20rem;
     background-color: rgba(255, 255, 255, 0.3);
 }
+.weather a{
+    text-decoration: none;
+    color: #FFECD1;
+    font-weight: 900;
+}
 form label.top{
     text-align: left;
 }
