@@ -62,6 +62,9 @@ header{
 .join{
     display: none;
 }
+.join a{
+    text-decoration: none;
+}
 .spotlight3{
     display: none;
 }

@@ -13,6 +13,9 @@
     .hero{
         grid-column: 1/4;
         grid-row: 1/2;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .new{
         grid-column: 1/4;

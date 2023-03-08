@@ -43,7 +43,7 @@
             <ul id="primaryNav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="discover.html" class="nav-link">Discover</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Directory</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link">Directory</a></li>
                 <li class="nav-item"><a href="join.html" class="nav-link">Join</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>        
             </ul>
@@ -59,9 +59,9 @@
         <div class="hero">
             <h2>Welcome to Sula Valley</h2>
             <picture>
-                <source srcset="images/wdd230-orgmedium.jpg" media="(min-width:500px) and (max-width: 799px)">
-                <source srcset="images/wdd230-orglarge.jpg" media="(min-width:800px)">
-                <img src="images/wdd230-orgsmall.jpg" alt="Hero Image">
+                <source srcset="images/mediumtown.jpg" media="(min-width:500px) and (max-width: 799px)">
+                <source srcset="images/largetown.jpg" media="(min-width:800px)">
+                <img src="images/smalltown.jpg" alt="Hero Image">
             </picture>
             <!-- <img src="images/wdd230-orglarge.jpg" alt="San Pedro Sula Honduras"> -->
             <h3>Join the Chamber</h3>
@@ -74,22 +74,24 @@
         <div class="weather">
             <h2>Weather</h2>
             <section>
-            <img src="images/sun.png" alt="sun">
-            <h3><span class="temperature">33</span> °C</h3>
-            <p>Sunny</p>
+            <img id="weather-icon" src=" " alt="">
+            <h3><span class="temperature"></span> °C</h3>
+            <p class="weather-description">Sunny</p>
             </section>
             <hr>
             <p>
-            Wind: NE <span class="wind-speed">28</span> km/h <br>
-            Wind Gusts: 28 km/h <br>
-            Humidity: 54 %. <br>
+            Wind Speed: <span class="wind-speed"></span> M/s <br>
+            <p>
+                Humidity: <span class="humidity"></span>%
+            </p>
+            <br>
             Wind Chill: <span class="wind-chill"></span>
             </p>
         </div>
         <div class="new"><h2>News Release</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
         <div class="join">
-            <h2>Join us!</h2>
+                <a href="join.html"><h2>Join us!</h2></a>
             <p>Discover how to join the chamber and how it will benefit your organization</p>
 
         </div>
