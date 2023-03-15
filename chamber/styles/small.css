@@ -243,7 +243,7 @@ footer .logo{
     margin-right: auto;
 
 }
-footer a{
+footer a, .hero a{
     text-decoration: none;
     color: #001524;
     font-weight: 900;
