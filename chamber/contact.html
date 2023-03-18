@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This web site is the home page of the Sula Valley Chamber of commerce.">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>Home Page </title>
+    <meta name="description" content="This web site is the Join page of the Sula Valley Chamber of commerce.">
+    <title>Join</title>
     <link rel="Icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -56,60 +55,52 @@
             <!-- <button id="hamburgerBtn"> <span>&#9776;</span> <span>X</span></button> -->
         </nav>
     </header>
-    <main class="home-main">
-        <div class="hero">
-            <h2>Welcome to Sula Valley</h2>
-            <picture>
-                <source srcset="images/mediumtown.jpg" media="(min-width:500px) and (max-width: 799px)">
-                <source srcset="images/largetown.jpg" media="(min-width:800px)">
-                <img src="images/smalltown.jpg" alt="Hero Image">
-            </picture>
-            <!-- <img src="images/wdd230-orglarge.jpg" alt="San Pedro Sula Honduras"> -->
-            <a href="join.html"><h3>Join the Chamber!</h3></a>
-        </div>
-        <div class="event">
-            <h2>Ribbon Cutting</h2>
-            <h3>💼 Chamber's Office</h3>
-            <p>Join us for the grand opening of the Chamber's office, Thursday at 1:00pm. Refreshments and lunch will be served after the ceremony. Thank you for you contributions to our success.</p>
-        </div>
-        <div class="weather">
-            <h2>Weather</h2>
+    <main class="join-page">
+        <div class="visit-us">
             <section>
-            <img id="weather-icon" src="x" alt="x">
-            <h3><span class="temperature"></span> °C</h3>
-            <p class="weather-description">Sunny</p>
+                <h2>Visit us</h2>
+                <hr>
+                <p>
+            Sula Valley Chamber of Commerce <br> <hr>
+            1321 Butte Street, #100 <br>
+            Redding, CA 96001
+            <br>
+            Monday – Thursday: 9:00 a.m. to 4:30 p.m. <br> 
+            -<hr>
+            Phone: (512) 478-9383 <br>
+            Email: sullayvalley@gmail.com
+                </p>
+                <a href="https://www.google.com/maps/@15.4599222,-88.0723241,11z" target="_blank">📍 Location Map</a>
+            
             </section>
-            <hr>
-            <p>
-            Wind Speed: <span class="wind-speed"></span> M/s <br>
-            <p>
-                Humidity: <span class="humidity"></span>%
-            </p>
-            <p>
-            Wind Chill: <span class="wind-chill"></span>
-            </p>
-            <p>
-                Weather Information from : <a href="https://openweathermap.org/">OpenWeatherMap</a>
-            </p>
-        </div>
-        <div class="new"><h2>News Release</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
-        <div class="join">
-                <a href="join.html"><h2>Join us!</h2></a>
-            <p>Discover how to join the chamber and how it will benefit your organization</p>
-
-        </div>
-        <div class="spotlight"> 
-            <div class="spotlight1">
-                
             </div>
-            <div class="spotlight2">
-                
-            </div>
-            <div class="spotlight3">
-                
-            </div>
-        </div>
+        <div class="join-form">
+        <h1>Contact us</h1>
+        <form method="get" action="contact.html">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="youremail@email.com" required></label>
+            <label class="top">Phone <input type="tel" name="phone" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact You</legend>
+            <div>Which way would you like us to contact you?</div>
+            <label class="sbs"><input type="radio" name="contact" value="text"> Phone Text Message</label>
+            <label class="sbs"><input type="radio" name="contact" value="email"> Email</label>
+        </fieldset>
+        <fieldset>
+        <legend>Question</legend>
+        <div>What question do you have?</div>
+            <label class="top">
+                <textarea id="description" name="description" rows="3" cols="10"></textarea>
+            </label>
+        </fieldset>
+        <input type="time" name="dateandtime" hidden>
+        <input type="submit" value="Contact us" class="submitBtn">
+    </form>
+</div>
     </main>
     <footer>
         <img class="logo" src="images/sulavalleylogo.webp" alt="logo">
@@ -125,5 +116,7 @@
     </footer>
     <script src="scripts/home.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
