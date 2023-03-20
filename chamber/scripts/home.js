@@ -36,24 +36,20 @@ const url = './json/directory.json';
 async function getCompaniesData() {
     const response = await fetch(url);
     const data = await response.json();
-    const companie = data.companies[Math.floor(Math.random() * data.length)];
-    displayCompanies(companie);  // note that we reference the prophet array of the data object given the structure of the json file
+    const companie = data;
+    var arrayRandom1 = Math.floor(Math.random() * data.length);
+    console.log(arrayRandom1)
+    displayCompanies(companie);
 }
 getCompaniesData();
 
-const displayCompanies = (data) => {
-    const randKey = keys[randIndex]
-
 // Use the key to get the corresponding name from the "names" object
-const name = names[randKey]
-    const card1 = document.querySelector('.spotlight1');
-    const card2 = document.querySelector('.spotlight2');
-    const card3 = document.querySelector('.spotlight3');
-     // select the output container element
-     // select the output container element
-    data.forEach(company => {
-      // Create elements to add to the div.cards element
-    card1 = document.createElement('section');
+const displayCompanies = (data) => {
+  const cards = document.querySelector('.spotlight'); // select the output container element
+  data.companies.forEach(company=> {
+    // Create elements to add to the div.cards element
+    if(company.status == "Gold" || company.status == "Silver"){
+    let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let address = document.createElement('p');
     let number = document.createElement('p');
@@ -73,12 +69,13 @@ const name = names[randKey]
     logo.setAttribute('height', '200');
 
       // Append the section(card) with the created elements
-    card1.appendChild(logo);
-    card1.appendChild(h2);
-    card1.appendChild(address);
-    card1.appendChild(number);
-    card1.appendChild(email);
-    cards.appendChild(card1);
-    } )// end of forEach loop
-  } // end of function expression
+    var arrayRandom1 = Math.floor(Math.random() * company.length);
+    card.appendChild(logo);
+    card.appendChild(h2);
+    card.appendChild(address);
+    card.appendChild(number);
+    card.appendChild(email);
+    cards.appendChild(card);}
+  } )// end of forEach loop
+} // end of function expression
 
