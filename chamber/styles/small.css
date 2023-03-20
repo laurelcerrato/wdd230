@@ -347,7 +347,7 @@ form label.top input, form label.top select, textarea{
     max-width: 20rem;
     background-color: rgba(255, 255, 255, 0.3);
 }
-.weather a{
+.weather a, .visit-us a{
     text-decoration: none;
     color: #FFECD1;
     font-weight: 900;
@@ -438,4 +438,14 @@ form label textarea{
 
 .list section:nth-child(even) {
 	background-color: rgba(0, 0, 0, 0.6);
+}
+.contact-page{
+    display: flex;
+    flex-direction: column;
+}
+.visit-us p, .visit-us h2, .visit-us a{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: x-large
 }

@@ -77,4 +77,12 @@
     .list section{
         flex-direction: row;
     }
+    .contact-page{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    .contact-page hr{
+        display: block;
+    }
 }
