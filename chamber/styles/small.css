@@ -139,7 +139,7 @@ nav ul li a{
     text-decoration: none;
     color: #FFECD1;
 }
-.event,.join-form, .join, .weather,.new,.spotlight, .spotlight1, .spotlight2, .spotlight3, .discover section, .directory section, .visit-us{
+.event,.join-form, .join, .weather,.new,.spotlight, .spotlight1, .spotlight2, .spotlight3,.spotlight4, .discover section, .directory section, .visit-us{
     background-color:#001524;
     margin: 5px;
     color:#FFECD1;
@@ -150,6 +150,7 @@ nav ul li a{
     box-shadow: 0 0 10px #010405;
     padding: 10px;
 }
+
 .thanks{
     display: flex;
     flex-direction: column;
@@ -290,6 +291,9 @@ footer hr{
 .discover picture img[data-src] {
     filter: blur(0.5em);
     transition: filter 5s;
+}
+.spotlight img{
+    width: 30%;
 }
 
 .discover picture img{
