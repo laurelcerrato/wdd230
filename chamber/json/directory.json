@@ -6,7 +6,7 @@
             "number" : "2398289732",
             "email" : "lacer@gmail.com",
             "img" : "./images/lacer.png",
-            "status" : "Gold"
+            "status" : "Bronze"
         },
         {
             "name" : "ZAFE",
@@ -22,7 +22,7 @@
             "number" : "546546456",
             "email" : "solar@gmail.com",
             "img" : "./images/solar.png",
-            "status" : "Gold"
+            "status" : "Bronze"
         },
         {
             "name" : "TELEPACIFICO",
@@ -30,7 +30,7 @@
             "number" : "12324342",
             "email" : "tele@gmail.com",
             "img" : "./images/tele.png",
-            "status" : "Silver"
+            "status" : "Gold"
         },
         {
             "name" : "NET",
@@ -38,7 +38,7 @@
             "number" : "28287781",
             "email" : "net@gmail.com",
             "img" : "./images/net.png",
-            "status" : "Bronze"
+            "status" : "Silver"
         },
         {
             "name" : "SEBRAE",
@@ -46,7 +46,7 @@
             "number" : "564545353",
             "email" : "sebrae@gmail.com",
             "img" : "./images/sebrae.png",
-            "status" : "Gold"
+            "status" : "Bronze"
         },
         {
             "name" : "GOAT",
@@ -62,7 +62,7 @@
             "number" : "453434353",
             "email" : "grow@gmail.com",
             "img" : "./images/grow.png",
-            "status" : "Bronze"
+            "status" : "Gold"
         },
         {
             "name" : "CINEMA",
