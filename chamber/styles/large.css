@@ -93,7 +93,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr; */
     }
-    .spotlight3{
+    .spotlight3,.spotlight4{
         display: block;
     }
     .spotlight img{
@@ -125,11 +125,11 @@
     .join-form{
         grid-column: 1/2;
     }
-    .nmembership, .bmembership, .smembership, .gmembership{
+    .nmembership,.bmembership, .smembership, .gmembership{
         display: block;
         grid-column: 2/3;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20%;
+        margin-right: 20%;
         color: #FFECD1;
         background-color: #001524;
         text-align: center;
@@ -137,5 +137,6 @@
         margin-top: 20px;
         border-radius: 20px;
     }
+
     /* .nmembership, .bmembership, .smembership, .gmembership */
 }   
