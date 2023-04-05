@@ -46,8 +46,8 @@ async function apiFetch(url) {
 }
 
 apiFetch(url);
-apiFetch(forecasturl);
-displayResults()
+// apiFetch(forecasturl);
+// displayResults()
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
