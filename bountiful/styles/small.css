@@ -186,6 +186,8 @@ img{
     text-align: center;
     background-color: rgb(60, 145, 230,0.2);
     padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
 
 }
 .weather img{
