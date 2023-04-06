@@ -216,7 +216,6 @@ h2{
 
 .area.area-info img:hover{
     box-shadow:0 0 10px grey;
-    scale: 0.1;
 }
 .drinks-container{
     width: 50%;

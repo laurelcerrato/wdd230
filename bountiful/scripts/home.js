@@ -25,12 +25,10 @@ const currentTemp = document.querySelector('.temperature');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('.weather-description');
 const humidity = document.querySelector('.humidity');
-const forecast = document.querySelector('.forecast');
 
 const url = `http://api.openweathermap.org/data/2.5/weather?lat=32.71571&lon=-117.16472&units=imperial&appid=45de18d04b727c7223d9fb5e769cd624`;
-const forecasturl = `http://api.openweathermap.org/data/2.5/forecast/hourly?lat=32.71571&lon=-117.16472&units=imperial&appid=45de18d04b727c7223d9fb5e769cd624`;
 
-async function apiFetch(url) {
+async function apiFetch() {
     try {
     const response = await fetch(url);
     if (response.ok) {
@@ -45,10 +43,35 @@ async function apiFetch(url) {
     }
 }
 
-apiFetch(url);
-// apiFetch(forecasturl);
-// displayResults()
+apiFetch();
 function displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
+    humidity.innerHTML = weatherData.main.humidity;
+    }
+    //forecast
+    const forecast = document.querySelector('.forecast');
+    const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=32.71571&lon=-117.16472&units=imperial&cnt=3&appid=45de18d04b727c7223d9fb5e769cd624`;
+    async function apifetch() {
+        try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayresults(data);
+    
+        } else {
+            throw Error(await response.text());
+        }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    apifetch();
+function displayresults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;

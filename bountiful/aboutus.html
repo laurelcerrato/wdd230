@@ -5,11 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This web site is the About us page of Bountiful Foods">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <title>About us Page</title>
 </head>
 <body>
-    <main id="aboutUs">
+    <header>
+        <div class="logo-container"><a href="home.html">
+            <img class="logo" src="images/Bountiful Foods Logo - Original - 5000x5000.png" alt="Bountiful Logo"></a>
+        </div>
+        <div class="date"></div>
+        <nav class="nav-bar">                
+                <ul class="nav-list" id="navi-list">
+                    <li class="list-item"><a href="home.html">Home</a></li>
+                    <li class="list-item"><a href="fresh.html">Fresh</a></li>
+                    <li class="list-item"><a href="aboutus.html">About us</a></li>
+                </ul>
+                <div class="menu" id="toggle-button">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    
+                </div>
+            </nav>
+        </header>
+    <main id="about">
 
     </main>
+    <footer>
+        
+            <div class="logo-container"><a href="home.html">
+                <img class="logo" src="images/Bountiful Foods Logo - Original - 5000x5000.png" alt="Bountiful Logo"></a>
+            </div>
+            <div class="socials">
+                <a href="https://instagram.com/"><img src="images/instagram.png" alt="Instgram Logo"></a>
+                <a href="https:/facebook.com/"><img src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitter (1).png" alt="Twitter Logo"></a>
+            </div>
+        
+        <div class="footer-text">
+            <p class="myinfo"><b>&copy;<span class ="year"></span> Bountiful Foods</b></p>
+        <p class="update"><b>Last Updated: <span id="date"></span> </b></p>
+        <p class="myinfo"><b>| By Laurel Cerrato | WDD 230 Project | Honduras </b></p>
+        </div>
+    </footer>
+    
+    <script src="scripts/home.js"></script>
 </body>
 </html>
