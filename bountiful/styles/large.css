@@ -3,7 +3,89 @@
         display: none;
 
     }
+    #home{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
     .nav-list li{
         display: inline-block;
     }
+    .nav-bar{
+        display: block;
+    }
+    .hero{
+        grid-column: 1/3;
+        margin: 10px;
+    }
+    .hero img{
+        border-radius: 10px;
+    }
+    .fruits-gallery{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 20px;
+    }
+    .drinks-container{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        z-index: 2;
+        background-color: #DDC8C4
+    }
+    .background{
+        display: block;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        z-index: 0;
+        opacity: 0.2;
+        align-self: center;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .background img{
+        border-radius: 40px;
+    }
+    .weather{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .hero-text{
+        font-family: 'Russo One', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 35px;
+            left: 40%;
+            top: 30%;
+            width: 50%;
+            height: 30px;
+        
+        }
+        .area-info{
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+        .area-info img{
+            width: 40%;
+            float: right;
+            padding: 10px;
+        }
+        .area-info p{
+            padding: 20px;
+        }
+        .contact{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+        }
+        .fruit-icon{
+            display: block;
+            width: 50%;
+            align-self: center;
+            justify-self: center;
+        }
 }

@@ -1,5 +1,5 @@
 @media only screen and (min-width: 35rem){
-    .medium-grid{
+    #home{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -12,6 +12,10 @@
         height: 8px;
         width: 40px;
     }
+    .hero{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
     .hero-text{
         font-family: 'Russo One', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
@@ -21,23 +25,38 @@
         justify-content: space-around;
         font-size: 30px;
             left: 50%;
-            top: 15%;
+            top: 20%;
             width: 50%;
             bottom: 10%;
-        
+            grid-column: 1/3;
+            grid-row: 1/2;
         }
         .area-info{
             grid-column: 1/2;
-            grid-row: 1/4;
+            grid-row: 2/4;
         }
         .weather{
             grid-column:2/3 ;
-            grid-row:1/2;
+            grid-row:2/3;
         }
         .fruits-gallery{
             grid-column: 2/3;
+            grid-row: 3/4;
+            height: 100%;
         }
         .drinks-container{
-            grid-column: 1/2;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            grid-column: 2/3;
         }
+        .contact{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+
 }
