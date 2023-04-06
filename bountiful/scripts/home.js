@@ -55,10 +55,10 @@ function displayResults(weatherData) {
     }
     //forecast
     const forecast = document.querySelector('.forecast');
-    const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=32.71571&lon=-117.16472&units=imperial&cnt=3&appid=45de18d04b727c7223d9fb5e769cd624`;
+    const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=32.71571&lon=-117.16472&units=imperial&appid=45de18d04b727c7223d9fb5e769cd624`;
     async function apifetch() {
         try {
-        const response = await fetch(url);
+        const response = await fetch(forecasturl);
         if (response.ok) {
             const data = await response.json();
             displayresults(data);
@@ -72,11 +72,9 @@ function displayResults(weatherData) {
     }
     apifetch();
 function displayresults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
-    humidity.innerHTML = weatherData.main.humidity;
+    console.log(weatherData.list)
+    forecast.innerHTML = `<p>${new Date((weatherData.list[0].dt)*1000).toDateString()} - Temperature: ${weatherData.list[0].main.temp} °F</p>
+                            <p>${new Date((weatherData.list[3].dt)*1000).toDateString()} - Temperature: ${weatherData.list[3].main.temp} °F</p>
+                            <p>${new Date((weatherData.list[13].dt)*1000).toDateString()} - Temperature: ${weatherData.list[13].main.temp} °F</p>
+                            `;
     }
