@@ -79,3 +79,8 @@ function displayresults(weatherData) {
                             <p>${new Date((weatherData.list[17].dt)*1000).toDateString()} - Temperature: ${weatherData.list[17].main.temp} °F</p>
                             `;
     }
+    // amount of drinks = 
+    const drinks = document.querySelector(".drinks");
+    const amount = localStorage.getItem("amount");
+    
+    drinks.innerHTML = amount;
