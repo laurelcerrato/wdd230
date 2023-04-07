@@ -192,7 +192,7 @@ font-size: 18px;
 img{
     width: 100%;
 }
-.area-info,.weather,.drinks-container,.contact{
+.area-info,.weather,.drinks-container,.contact,.history,.san,.about-form,.locate{
     text-align: center;
     background-color: rgb(60, 145, 230,0.2);
     padding: 20px;
@@ -269,7 +269,7 @@ form label.top, form div{
 #fresh h2{
     text-align: center;
 }
-form label{
+.about-form form, form label{
     align-self: center;
 }
 form label.top input, form label.top select{
@@ -309,4 +309,13 @@ form label.top input:required:valid{
 #feedback{
     text-align: center;
     padding: 10px;
+}
+.sandiego{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sandiego img{
+    align-self: center;
+    box-shadow: 5px  10px 8px #888888;
 }

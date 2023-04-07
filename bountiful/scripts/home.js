@@ -83,4 +83,4 @@ function displayresults(weatherData) {
     const drinks = document.querySelector(".drinks");
     const amount = Number(window.localStorage.getItem("amount"));
 
-    drinks.innerHTML = amount;
+    //drinks.innerHTML= amount;

@@ -34,7 +34,92 @@
             </nav>
         </header>
     <main id="about">
-
+        <section class="history">
+            <h2>Our history</h2>
+            <p>
+                The company was born out of the vision, perseverance and audacity of entrepreneur Virgilio Galo
+                Valladares to market grapes and apples not only during the Christmas season but all year round.
+                throughout the year. Likewise, the desire to encourage Hondurans to consume a variety of other fruits was what drove the
+                variety of fruits was what prompted Mr. Virgilio Galo to include new and highly nutritional products in the market.
+                nutritional contribution in the market.
+                
+                The company has been operating in San Diego for 21 years, importing and marketing fruits and vegetables nationwide.
+                and marketing fruits and vegetables nationwide, supplying every Honduran home with quality products.
+                quality products.
+                
+                Among our main products we can mention the classic grapes and apples in their variety of colors and sizes
+                variety of colors and sizes, green pears, red pears and Asian pears, peaches,
+                nectarines, red plums and black plums, oranges, clementines, kiwis, apricots, pomegranates, cherries, avocadoes, pomegranates, cherries and avocados,
+                pomegranates, cherries, avocados and vegetables such as garlic and onions, etc.
+                <img src="images/diet.png" alt="vegetables" loading="lazy">
+                Our motto is "We are always in season!" and our business relationships with our international suppliers help us to fulfill this motto.
+                with our international suppliers help us to fulfill this motto by providing our varied clientele with the
+                our varied clientele with the different types of seasonal fruits and vegetables.
+                
+                We are the first company in Honduras to import fruits and vegetables all year round.
+                all year round. Our desire to offer the consumer fresh imported products of good quality at affordable prices and to
+                quality imported fresh produce at affordable prices and to provide good customer service has positioned us as leaders in the industry throughout the year.
+                leaders in the industry over the years.
+                
+                </p>
+        </section>
+        <section class="san">
+            <h2>Fun Facts About San Diego</h2>
+            <p>Everyone knows that San Diego has the most beautiful beaches, the most perfect weather and is home to some of the most laid-back, friendly folks in the nation. But there are a lot of other really cool and interesting facts about America’s Finest City that you may not know. Read on for fun facts about San Diego.</p>            
+            <h3>BRIDGES WITH PRESIDENTIAL PURPOSE.</h3>
+            <p>Ronald Reagan was the first person to drive across the Coronado Bridge when it opened in 1969.</p>
+            <h3>PROTECT THE JACKRABBITS!</h3>
+            <p>In San Diego, it’s illegal to shoot jackrabbits from the back of a streetcar.</p>
+            <h3>BAH HUMBUG… AFTER FEBRUARY 2.</h3>
+            <p>There are fines issued for leaving your Christmas lights up past February 2nd.</p>
+            <h3>GO NAVY!</h3>
+            <p>The top employer in the city is the United States Navy.</p>
+            <h3>MARINE LIFE RULES!</h3>
+            <p>San Diego is home to the largest oceanographic museum in the USA, the Birch Aquarium at Scripps.</p>
+            <h3>HISTORICALLY THRILLING!</h3>
+            <p>The Giant Dipper, a wooden roller coaster at Belmont Park in Mission Beach, is the only roller coaster in the United States to be on the National Register of Historic Places.</p>
+        </section>
+        <div class="sandiego">
+            <picture>
+                <source srcset="images/sanlarge.jpg" media="(min-width:800px)">
+                <source srcset="images/sanmedium.jpg" media="(min-width:500px) and (max-width: 799px)">
+                <img src="images/sansmall.jpg" alt="San Diego" loading="lazy">
+            </picture>
+        </div>
+        <section class="locate">
+            <h2>Locate Us</h2>
+            <p>San Diego, California</p>
+            <p>3511 Coleman Avenue</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.8553339201994!2d-117.05551492545256!3d32.5833819737452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94ec89d82cff9%3A0x8d47b835bc1c39c4!2s3511%20Coleman%20Ave%2C%20San%20Diego%2C%20CA%2092154%2C%20EE.%20UU.!5e0!3m2!1ses!2shn!4v1680844740775!5m2!1ses!2shn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="about-form">
+            <h1>Contact us</h1>
+            <form method="get" action="aboutus.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">First Name <input type="text" name="fname" required></label>
+                <label class="top">Last Name <input type="text" name="lname" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="youremail@email.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact You</legend>
+                <p>Which way would you like us to contact you?</p>
+                <label class="sbs"><input type="radio" name="contact" value="text"> Phone Text Message</label>
+                <label class="sbs"><input type="radio" name="contact" value="email"> Email</label>
+            </fieldset>
+            <fieldset>
+            <legend>Question</legend>
+            <p>What question do you have?</p>
+                <label class="top">
+                    <textarea id="description" name="description" rows="3" cols="10"></textarea>
+                </label>
+            </fieldset>
+            <input type="time" name="dateandtime" hidden>
+            <input type="submit" value="Contact us" class="submitBtn">
+        </form></div>
     </main>
     <footer>
         
