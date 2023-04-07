@@ -81,6 +81,6 @@ function displayresults(weatherData) {
     }
     // amount of drinks = 
     const drinks = document.querySelector(".drinks");
-    const amount = localStorage.getItem("amount");
-    
+    const amount = Number(window.localStorage.getItem("amount"));
+
     drinks.innerHTML = amount;
