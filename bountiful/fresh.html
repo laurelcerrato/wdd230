@@ -34,7 +34,39 @@
             </nav>
         </header>
     <main id="fresh">
-
+        <h2>Build your own specialty drink!</h2>
+        <form method="get" id="form">
+            <fieldset>
+                <legend>Your information</legend>
+                <label class="top name">First Name<input type="text" name="fname" required></label>
+                <label class="top phone">Phone<input type="tel" name="phone" placeholder="123551234" required></label>
+                <label class="top email">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>       
+            <fieldset>
+                <legend>Fruits Selection</legend>
+                <p>Select 3 fruits for your drink</p>
+                <label class="top">
+                    <select name="fruit1" class="fruits1">
+                        <option value="" disabled selected>Choose a Fruit</option>
+                    </select>
+                    <select name="fruit2" class="fruits2">
+                        <option value="" disabled selected>Choose a Fruit</option>
+                    </select>
+                    <select name="fruit3" class="fruits3">
+                        <option value="" disabled selected>Choose a Fruit</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label class="top">
+                    <textarea id="instructions" name="instructions" rows="7" cols="25"></textarea>
+                </label>
+            </fieldset>
+            <input type="time" name="dateandtime" hidden>
+            <input type="submit" value="Create my Drink 🍹" class="submitBtn">
+            <div id="feedback"></div>
+        </form>
     </main>
     <footer>
         
@@ -55,5 +87,6 @@
     </footer>
     
     <script src="scripts/home.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>
 </html>

@@ -200,10 +200,16 @@ img{
     margin: 20px;
 
 }
+#fresh form{
+    background-color: rgb(60, 145, 230,0.2);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
 .weather img{
     width: 20%;
 }
-h2{
+h2,legend{
     font-family: "Russo One",sans-serif;
 }
 
@@ -235,4 +241,72 @@ h2{
 }
 .background{
     display: none;
+}
+select{
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+form fieldset{
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border: none;
+}
+form legend, form p{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+#fresh h2{
+    text-align: center;
+}
+form label{
+    align-self: center;
+}
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: .75rem;
+    color: #333;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submitBtn{
+    border: none;
+    background-color: #EC0B34;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    margin: 0 0 1rem 5%;
+    max-width: 20rem;
+    justify-self: center;
+}
+form label.top input:required{
+    border-left: red solid 6px;
+}
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+#feedback{
+    text-align: center;
+    padding: 10px;
 }

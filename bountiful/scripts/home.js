@@ -43,6 +43,7 @@ async function apiFetch() {
     }
 }
 
+const drinksamount = document.querySelector(".drinks");
 apiFetch();
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -73,8 +74,8 @@ function displayResults(weatherData) {
     apifetch();
 function displayresults(weatherData) {
     console.log(weatherData.list)
-    forecast.innerHTML = `<p>${new Date((weatherData.list[0].dt)*1000).toDateString()} - Temperature: ${weatherData.list[0].main.temp} °F</p>
-                            <p>${new Date((weatherData.list[3].dt)*1000).toDateString()} - Temperature: ${weatherData.list[3].main.temp} °F</p>
-                            <p>${new Date((weatherData.list[13].dt)*1000).toDateString()} - Temperature: ${weatherData.list[13].main.temp} °F</p>
+    forecast.innerHTML = `<p>${new Date((weatherData.list[1].dt)*1000).toDateString()} - Temperature: ${weatherData.list[1].main.temp} °F</p>
+                            <p>${new Date((weatherData.list[9].dt)*1000).toDateString()} - Temperature: ${weatherData.list[9].main.temp} °F</p>
+                            <p>${new Date((weatherData.list[17].dt)*1000).toDateString()} - Temperature: ${weatherData.list[17].main.temp} °F</p>
                             `;
     }

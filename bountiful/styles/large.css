@@ -22,7 +22,9 @@
         border-top: 0px;
         justify-content: space-around;
     }
-    
+    #fresh{
+        width: 40%;
+    }
     .nav-list li{
         padding: 30px;
         display: block;
@@ -133,5 +135,13 @@
         }
         .socials img{
             width: 35%;
+        }
+        .submitBtn value{
+            display: flex;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-self: center;
+            text-align: center;
         }
 }
