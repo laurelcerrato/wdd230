@@ -46,15 +46,17 @@ const getNutrition = (data) => {
         }
     });
 }
-const amountofdrinks =0;
-Number(window.localStorage.setItem("amount",amountofdrinks));
-Number(window.localStorage.getItem("amount",amountofdrinks));
+const drinks = document.querySelector(".drinks");
+let amountofdrinks = Number(window.localStorage.getItem("amount"));
+formElement.addEventListener('submit', function(e) {
+    e.preventDefault();
+    amountofdrinks++;
+    localStorage.setItem("amount", amountofdrinks);
+        })
 //message
 const feedbackElement = document.getElementById('feedback');
     formElement.addEventListener('submit', function(e) {
     e.preventDefault();
-    //amountofdrinks++;
-    localStorage.setItem("amount",amountofdrinks);
     feedbackElement.innerHTML = `Name: ${formElement.fname.value}<br>Email: ${formElement.email.value}<br>Phone: ${formElement.phone.value}<br> Selected fruits: ${formElement.fruit2.value}, ${formElement.fruit1.value}, ${formElement.fruit3.value} <br>Special Instructions: ${formElement.instructions.value} <br> Date: ${new Date().toDateString()} <br> Total Amount of Carbohydrates: ${carbohydrates} <br> Total Amount of protein: ${protein} <br> Total Amount of fat: ${fat} <br> Total Amount of calories: ${calories} `;
     feedbackElement.style.display = "block";
     feedbackElement.style.border= "1px solid #333";

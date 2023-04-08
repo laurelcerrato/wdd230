@@ -29,21 +29,23 @@ const humidity = document.querySelector('.humidity');
 const url = `http://api.openweathermap.org/data/2.5/weather?lat=32.71571&lon=-117.16472&units=imperial&appid=45de18d04b727c7223d9fb5e769cd624`;
 
 async function apiFetch() {
-    try {
+    //try {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
         displayResults(data);
 
-    } else {
-        throw Error(await response.text());
-    }
-    } catch (error) {
-        console.log(error);
-    }
+    // } else {
+    //     throw Error(await response.text());
+    // }
+    // } catch (error) {
+    //     console.log(error);
+    // }
+}
 }
 
 const drinksamount = document.querySelector(".drinks");
+drinksamount.innerHTML = Number(window.localStorage.getItem("amount"));
 apiFetch();
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -58,18 +60,19 @@ function displayResults(weatherData) {
     const forecast = document.querySelector('.forecast');
     const forecasturl = `https://api.openweathermap.org/data/2.5/forecast?lat=32.71571&lon=-117.16472&units=imperial&appid=45de18d04b727c7223d9fb5e769cd624`;
     async function apifetch() {
-        try {
+        // try {
         const response = await fetch(forecasturl);
         if (response.ok) {
             const data = await response.json();
             displayresults(data);
+        }
     
-        } else {
-            throw Error(await response.text());
-        }
-        } catch (error) {
-            console.log(error);
-        }
+        // } else {
+        //     throw Error(await response.text());
+        // }
+        // } catch (error) {
+        //     console.log(error);
+        // }
     }
     apifetch();
 function displayresults(weatherData) {
@@ -79,8 +82,5 @@ function displayresults(weatherData) {
                             <p>${new Date((weatherData.list[17].dt)*1000).toDateString()} - Temperature: ${weatherData.list[17].main.temp} °F</p>
                             `;
     }
-    // amount of drinks = 
-    const drinks = document.querySelector(".drinks");
-    const amount = Number(window.localStorage.getItem("amount"));
 
-    //drinks.innerHTML= amount;
+

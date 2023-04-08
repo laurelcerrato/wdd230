@@ -86,13 +86,15 @@
             grid-column: 1/2;
             grid-row: 4/5;
         }
-        form input.submitBtn{
+        #fresh form input.submitBtn{
         text-align: center;
+        margin: 0 0 1rem 13%;
     }
     form label{
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+        
     }
     .sandiego{
         width: 80%;
