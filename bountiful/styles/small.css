@@ -345,3 +345,7 @@ form label.top input:required:valid{
     position:absolute;
 
 }
+#home picture img[data-src] {
+    filter: blur(0.3em);
+    transition: filter 5s;
+}
