@@ -1,7 +1,8 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Russo+One&display=swap');
 body{
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Lato, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .logo,.logo-container{
     width: 100%;
